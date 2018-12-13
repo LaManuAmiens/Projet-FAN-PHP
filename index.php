@@ -1,8 +1,14 @@
+<!--Recupération du fichier source xml pour afficher-->
+<!--Partie Rico-->
 <?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+$xml=simplexml_load_file("source.xml") or die("C'est impossible");
+    echo $xml->page[2]->menu;
+    echo $xml->page[2]->title ;
+    echo $xml->page[2]->content ;
+?>
+<?php
+$xml=simplexml_load_file("source.xml") or die("C'est impossible");
+    echo $xml->page[3]->menu;
+    echo $xml->page[3]->title ;
+    echo $xml->page[3]->content ;
+?>
