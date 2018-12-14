@@ -11,7 +11,7 @@ $xml = simplexml_load_file($fichier) or die('Erreur : impossible de créer l\'ob
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
         <title> <?php
-if(!isset($_GET['id']) == '1.html'){
+if(!isset($_GET['id']) == '1.html' || $_GET['id'] == '1.html'){
   echo $xml->page[0]->title;
 }else if($_GET['id'] == '2.html'){
   echo $xml->page[1]->title;
