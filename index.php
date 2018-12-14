@@ -11,17 +11,14 @@ $xml = simplexml_load_file($fichier) or die('Erreur : impossible de créer l\'ob
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
         <title> <?php
-if($_GET['id'] == '1.html'){
-  $xml = simplexml_load_file('source.xml') or die('Erreur : impossible de créer l\'objet');
+if(!isset($_GET['id']) == '1.html'){
   echo $xml->page[0]->title;
 }else if($_GET['id'] == '2.html'){
-  $xml = simplexml_load_file('source.xml') or die('Erreur : impossible de créer l\'objet');
   echo $xml->page[1]->title;
 }else if($_GET['id'] == '3.html'){
-  $xml = simplexml_load_file('source.xml') or die('Erreur : impossible de créer l\'objet');
   echo $xml->page[2]->title;
 }else{
-  $xml = simplexml_load_file('source.xml') or die('Erreur : impossible de créer l\'objet');
+
   echo $xml->page[3]->title;
 }
 ?></title>
@@ -49,7 +46,7 @@ if($_GET['id'] == '1.html'){
         </nav>
         <div class="container-fluid">
         <?php
-if($_GET['id'] == '1.html'){
+if(!isset($_GET['id']) == '1.html' || $_GET['id'] == '1.html'){
 ?><div class="row justify-content-center">
 <?= $xml->page[0]->content;?>
   </div>
