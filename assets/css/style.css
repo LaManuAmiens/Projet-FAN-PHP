@@ -1,0 +1,48 @@
+/*partie Nicolas*/
+p{
+    margin: 0%;
+}
+.presentation{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    margin-top: 2%;
+}
+h2{
+    text-align: center;
+    margin-top:2%;
+}
+.img{
+    text-align: center;
+    border: 2px solid #0d1321;
+    margin: 5px;
+    border-radius: 10px;
+}
+.logo{
+    width: 30%;
+}
+nav{
+    background: linear-gradient(40deg, #0d1321, #748cab);
+}
+.nav-link, .navbar-brand{
+    font-weight: bold;
+    color: #FFF;
+}
+.nav-link:hover, .navbar-brand:hover{
+    color: #f0ebd8;
+}
+/*Fin partie Nicolas*/
+
+/* page 4 */
+.liste-contact{
+    list-style: none;
+}
+ul{
+    text-align: center;
+}
+#text-devis{
+    font-weight: bold;
+    font-size: 1.2rem;    
+}
+/*fin page 4*/
