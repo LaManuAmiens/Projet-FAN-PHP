@@ -56,8 +56,11 @@ if($_GET['id'] == '1.html'){
   </div>
   <?php
 }else if($_GET['id'] == '2.html'){
-  $xml = simplexml_load_file('source.xml') or die('Erreur : impossible de créer l\'objet');
-  echo $xml->page[1]->content;
+  $xml = simplexml_load_file('source.xml') or die('Erreur : impossible de créer l\'objet');?>
+  <div class="row justify-content-center">
+  <?= $xml->page[1]->content;?>
+  </div>
+        <?php
 }else if($_GET['id'] == '3.html'){
   $xml = simplexml_load_file('source.xml') or die('Erreur : impossible de créer l\'objet');
   echo $xml->page[2]->content;
