@@ -10,18 +10,7 @@ $xml = simplexml_load_file($fichier) or die('Erreur : impossible de créer l\'ob
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
-        <title> <?php
-if(!isset($_GET['id']) == '1.html' || $_GET['id'] == '1.html'){
-  echo $xml->page[0]->title;
-}else if($_GET['id'] == '2.html'){
-  echo $xml->page[1]->title;
-}else if($_GET['id'] == '3.html'){
-  echo $xml->page[2]->title;
-}else{
-
-  echo $xml->page[3]->title;
-}
-?></title>
+        <title><?= $xml->page[intval($_GET['id'])-1]->title ?></title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg">
@@ -45,23 +34,7 @@ if(!isset($_GET['id']) == '1.html' || $_GET['id'] == '1.html'){
             </div>
         </nav>
         <div class="container-fluid">
-        <?php
-if(!isset($_GET['id']) == '1.html' || $_GET['id'] == '1.html'){
-?><div class="row justify-content-center">
-<?= $xml->page[0]->content;?>
-  </div>
-  <?php
-}else if($_GET['id'] == '2.html'){?>
-  <div class="row justify-content-center">
-  <?= $xml->page[1]->content;?>
-  </div>
-        <?php
-}else if($_GET['id'] == '3.html'){
-  echo $xml->page[2]->content;
-}else{
-  echo $xml->page[3]->content;
-}
-?>
+        <?= $xml->page[intval($_GET['id'])-1]->content ?>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
