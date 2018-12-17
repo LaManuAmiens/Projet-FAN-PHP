@@ -25,21 +25,21 @@ if(!isset($_GET['id']) == '1.html' || $_GET['id'] == '1.html'){
     </head>
     <body>
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.php?id=1.html"><img class="logo"src="assets/img/logo.png" alt="logo"><?= $xml->page[0]->menu; ?></a>
+            <a class="navbar-brand" href="1.html"><img class="logo"src="assets/img/logo.png" alt="logo"><?= $xml->page[0]->menu; ?></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon ml-0">&#9776;</span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?id=2.html"><?= $xml->page[1]->menu; ?></a>
+                        <a class="nav-link" href="2.html"><?= $xml->page[1]->menu; ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?id=3.html"><?= $xml->page[2]->menu; ?></a>
+                        <a class="nav-link" href="3.html"><?= $xml->page[2]->menu; ?></a>
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?id=4.html"><?= $xml->page[3]->menu; ?></a>
+                        <a class="nav-link" href="4.html"><?= $xml->page[3]->menu; ?></a>
                     </li>
                 </ul>
             </div>
