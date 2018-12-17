@@ -15,8 +15,8 @@ $xml = simplexml_load_file($fichier) or die('Erreur : impossible de créer l\'ob
     <body>
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="1.html"><img class="logo"src="assets/img/logo.png" alt="logo"><?= $xml->page[0]->menu; ?></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon ml-0">&#9776;</span>
+            <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">&#9776;</span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">

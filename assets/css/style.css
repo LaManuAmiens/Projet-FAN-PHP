@@ -13,11 +13,10 @@ h2{
     text-align: center;
     margin-top:2%;
 }
-.img{
+img{
     text-align: center;
-    border: 2px solid #0d1321;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 .logo{
     width: 30%;
@@ -112,8 +111,24 @@ li > a:hover:before {
 h3{
     text-align: center;
 }
-.presentation, .prix, .simple, .secu{
+.list-comp{
+    list-style: none;
+    text-align: center;
+}
+.bold-p2{
     font-weight: bold;
-    font-size: 1.1rem;
+    padding-top: 1%;
+    border-top: 1px solid rgba(97,158,219, 0.5);
+}
+@media screen and (max-width: 550px){
+    iframe{
+        width: 100%;
+    }
 }
 /*fin page 2 */
+/*nav*/
+    .navbar-toggler-icon{
+        color: #FFF;
+    }
+/*fin nav*/
+
